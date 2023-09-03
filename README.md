@@ -7,6 +7,7 @@ My first Java calculator using java in netbeans
 ## 2. Calculate
 ![Run the app](/img/pic2.png)
 # Features
+
 1. User Friendly UI.
 2. Have the following operations.
    a. Additions
