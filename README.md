@@ -15,6 +15,5 @@ My first Java calculator using java in netbeans
    c. Subtractions
    d. divisions
 3. Clear
-4. Back
-
+## icon refs: https://www.iconfinder.com/icons/171352/calculator_icon.
 # Thank you for your support.
