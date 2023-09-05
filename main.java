@@ -522,3 +522,6 @@ public class main extends javax.swing.JFrame {
         private javax.swing.JTextField t1;
         // End of variables declaration                   
 }
+//this program is created by: Christian Barbosa
+//BSIT-AI-41
+//Enjoy
