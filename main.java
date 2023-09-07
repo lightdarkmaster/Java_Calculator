@@ -525,3 +525,6 @@ public class main extends javax.swing.JFrame {
 //this program is created by: Christian Barbosa
 //BSIT-AI-41
 //Enjoy
+
+//add some features
+//add +- button, ".", CE. <-
