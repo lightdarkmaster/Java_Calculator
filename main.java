@@ -1,7 +1,6 @@
-
-package com.chanbarbosa.calculatorv1;
-
+package Java_Calculator;
 public class main extends javax.swing.JFrame {
+
 	
 	double num1, num2;
 	String operator = null;
@@ -29,7 +28,6 @@ public class main extends javax.swing.JFrame {
                 dot = new javax.swing.JButton();
                 equal = new javax.swing.JButton();
                 divide = new javax.swing.JButton();
-                back = new javax.swing.JButton();
                 plus = new javax.swing.JButton();
                 minus = new javax.swing.JButton();
                 jPanel1 = new javax.swing.JPanel();
@@ -40,125 +38,129 @@ public class main extends javax.swing.JFrame {
                 backSpace = new javax.swing.JButton();
                 posNeg = new javax.swing.JButton();
                 clear = new javax.swing.JButton();
+                jMenuBar1 = new javax.swing.JMenuBar();
+                fileMenu = new javax.swing.JMenu();
+                editMenu = new javax.swing.JMenu();
+                optionMenu = new javax.swing.JMenu();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
                 setResizable(false);
 
-                b2.setBackground(new java.awt.Color(255, 105, 6));
+                b2.setBackground(new java.awt.Color(255, 94, 12));
                 b2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
                 b2.setForeground(new java.awt.Color(255, 255, 255));
                 b2.setText("2");
-                b2.setBorder(new javax.swing.border.MatteBorder(null));
+                b2.setBorder(null);
                 b2.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 b2ActionPerformed(evt);
                         }
                 });
 
-                b3.setBackground(new java.awt.Color(255, 105, 6));
+                b3.setBackground(new java.awt.Color(255, 94, 12));
                 b3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
                 b3.setForeground(new java.awt.Color(255, 255, 255));
                 b3.setText("3");
-                b3.setBorder(new javax.swing.border.MatteBorder(null));
+                b3.setBorder(null);
                 b3.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 b3ActionPerformed(evt);
                         }
                 });
 
-                b1.setBackground(new java.awt.Color(255, 105, 6));
+                b1.setBackground(new java.awt.Color(255, 94, 12));
                 b1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
                 b1.setForeground(new java.awt.Color(255, 255, 255));
                 b1.setText("1");
-                b1.setBorder(new javax.swing.border.MatteBorder(null));
+                b1.setBorder(null);
                 b1.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 b1ActionPerformed(evt);
                         }
                 });
 
-                b5.setBackground(new java.awt.Color(255, 105, 6));
+                b5.setBackground(new java.awt.Color(255, 94, 12));
                 b5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
                 b5.setForeground(new java.awt.Color(255, 255, 255));
                 b5.setText("5");
-                b5.setBorder(new javax.swing.border.MatteBorder(null));
+                b5.setBorder(null);
                 b5.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 b5ActionPerformed(evt);
                         }
                 });
 
-                b6.setBackground(new java.awt.Color(255, 105, 6));
+                b6.setBackground(new java.awt.Color(255, 94, 12));
                 b6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
                 b6.setForeground(new java.awt.Color(255, 255, 255));
                 b6.setText("6");
-                b6.setBorder(new javax.swing.border.MatteBorder(null));
+                b6.setBorder(null);
                 b6.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 b6ActionPerformed(evt);
                         }
                 });
 
-                b4.setBackground(new java.awt.Color(255, 105, 6));
+                b4.setBackground(new java.awt.Color(255, 94, 12));
                 b4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
                 b4.setForeground(new java.awt.Color(255, 255, 255));
                 b4.setText("4");
-                b4.setBorder(new javax.swing.border.MatteBorder(null));
+                b4.setBorder(null);
                 b4.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 b4ActionPerformed(evt);
                         }
                 });
 
-                b8.setBackground(new java.awt.Color(255, 105, 6));
+                b8.setBackground(new java.awt.Color(255, 94, 12));
                 b8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
                 b8.setForeground(new java.awt.Color(255, 255, 255));
                 b8.setText("8");
-                b8.setBorder(new javax.swing.border.MatteBorder(null));
+                b8.setBorder(null);
                 b8.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 b8ActionPerformed(evt);
                         }
                 });
 
-                b9.setBackground(new java.awt.Color(255, 105, 6));
+                b9.setBackground(new java.awt.Color(255, 94, 12));
                 b9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
                 b9.setForeground(new java.awt.Color(255, 255, 255));
                 b9.setText("9");
-                b9.setBorder(new javax.swing.border.MatteBorder(null));
+                b9.setBorder(null);
                 b9.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 b9ActionPerformed(evt);
                         }
                 });
 
-                b7.setBackground(new java.awt.Color(255, 105, 6));
+                b7.setBackground(new java.awt.Color(255, 94, 12));
                 b7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
                 b7.setForeground(new java.awt.Color(255, 255, 255));
                 b7.setText("7");
-                b7.setBorder(new javax.swing.border.MatteBorder(null));
+                b7.setBorder(null);
                 b7.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 b7ActionPerformed(evt);
                         }
                 });
 
-                jButton13.setBackground(new java.awt.Color(255, 105, 6));
+                jButton13.setBackground(new java.awt.Color(255, 94, 12));
                 jButton13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
                 jButton13.setForeground(new java.awt.Color(255, 255, 255));
                 jButton13.setText("0");
-                jButton13.setBorder(new javax.swing.border.MatteBorder(null));
+                jButton13.setBorder(null);
                 jButton13.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 jButton13ActionPerformed(evt);
                         }
                 });
 
-                dot.setBackground(new java.awt.Color(204, 255, 204));
+                dot.setBackground(new java.awt.Color(255, 94, 12));
                 dot.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-                dot.setForeground(new java.awt.Color(0, 0, 0));
+                dot.setForeground(new java.awt.Color(255, 255, 255));
                 dot.setText(".");
-                dot.setBorder(new javax.swing.border.MatteBorder(null));
+                dot.setBorder(null);
                 dot.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 dotActionPerformed(evt);
@@ -169,51 +171,40 @@ public class main extends javax.swing.JFrame {
                 equal.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
                 equal.setForeground(new java.awt.Color(0, 0, 0));
                 equal.setText("=");
-                equal.setBorder(new javax.swing.border.MatteBorder(null));
+                equal.setBorder(null);
                 equal.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 equalActionPerformed(evt);
                         }
                 });
 
-                divide.setBackground(new java.awt.Color(204, 255, 204));
+                divide.setBackground(new java.awt.Color(255, 255, 255));
                 divide.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-                divide.setForeground(new java.awt.Color(255, 0, 0));
+                divide.setForeground(new java.awt.Color(0, 0, 0));
                 divide.setText("÷");
-                divide.setBorder(new javax.swing.border.MatteBorder(null));
+                divide.setBorder(null);
                 divide.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 divideActionPerformed(evt);
                         }
                 });
 
-                back.setBackground(new java.awt.Color(204, 255, 204));
-                back.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-                back.setForeground(new java.awt.Color(255, 0, 0));
-                back.setText("%");
-                back.setBorder(new javax.swing.border.MatteBorder(null));
-                back.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                backActionPerformed(evt);
-                        }
-                });
-
-                plus.setBackground(new java.awt.Color(204, 255, 204));
+                plus.setBackground(new java.awt.Color(255, 255, 255));
                 plus.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-                plus.setForeground(new java.awt.Color(255, 0, 0));
+                plus.setForeground(new java.awt.Color(0, 0, 0));
                 plus.setText("+");
-                plus.setBorder(new javax.swing.border.MatteBorder(null));
+                plus.setBorder(null);
                 plus.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 plusActionPerformed(evt);
                         }
                 });
 
-                minus.setBackground(new java.awt.Color(204, 255, 204));
+                minus.setBackground(new java.awt.Color(255, 255, 255));
                 minus.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-                minus.setForeground(new java.awt.Color(255, 0, 0));
+                minus.setForeground(new java.awt.Color(0, 0, 0));
                 minus.setText("-");
-                minus.setBorder(new javax.swing.border.MatteBorder(null));
+                minus.setBorder(null);
                 minus.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 minusActionPerformed(evt);
@@ -247,11 +238,11 @@ public class main extends javax.swing.JFrame {
                                 .addContainerGap())
                 );
 
-                multiply1.setBackground(new java.awt.Color(204, 255, 204));
+                multiply1.setBackground(new java.awt.Color(255, 255, 255));
                 multiply1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-                multiply1.setForeground(new java.awt.Color(255, 0, 0));
+                multiply1.setForeground(new java.awt.Color(0, 0, 0));
                 multiply1.setText("X");
-                multiply1.setBorder(new javax.swing.border.MatteBorder(null));
+                multiply1.setBorder(null);
                 multiply1.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 multiply1ActionPerformed(evt);
@@ -267,40 +258,51 @@ public class main extends javax.swing.JFrame {
                 });
 
                 label1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 8)); // NOI18N
-                label1.setText("CB-Cal001");
+                label1.setText("CB-Cal002");
 
-                backSpace.setBackground(new java.awt.Color(102, 255, 204));
+                backSpace.setBackground(new java.awt.Color(255, 255, 255));
                 backSpace.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
                 backSpace.setForeground(new java.awt.Color(0, 0, 0));
                 backSpace.setText("←");
-                backSpace.setBorder(new javax.swing.border.MatteBorder(null));
+                backSpace.setBorder(null);
                 backSpace.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 backSpaceActionPerformed(evt);
                         }
                 });
 
-                posNeg.setBackground(new java.awt.Color(102, 255, 204));
+                posNeg.setBackground(new java.awt.Color(255, 255, 255));
                 posNeg.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
                 posNeg.setForeground(new java.awt.Color(0, 0, 0));
                 posNeg.setText("±");
-                posNeg.setBorder(new javax.swing.border.MatteBorder(null));
+                posNeg.setBorder(null);
                 posNeg.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 posNegActionPerformed(evt);
                         }
                 });
 
-                clear.setBackground(new java.awt.Color(102, 255, 204));
+                clear.setBackground(new java.awt.Color(255, 255, 255));
                 clear.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
                 clear.setForeground(new java.awt.Color(0, 0, 0));
                 clear.setText("CE");
-                clear.setBorder(new javax.swing.border.MatteBorder(null));
+                clear.setBorder(null);
                 clear.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 clearActionPerformed(evt);
                         }
                 });
+
+                fileMenu.setText("File");
+                jMenuBar1.add(fileMenu);
+
+                editMenu.setText("Edit");
+                jMenuBar1.add(editMenu);
+
+                optionMenu.setText("Options");
+                jMenuBar1.add(optionMenu);
+
+                setJMenuBar(jMenuBar1);
 
                 javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
                 getContentPane().setLayout(layout);
@@ -312,14 +314,6 @@ public class main extends javax.swing.JFrame {
                                         .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGroup(layout.createSequentialGroup()
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                        .addGroup(layout.createSequentialGroup()
-                                                                .addComponent(equal, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(dot, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(back, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                                         .addGroup(layout.createSequentialGroup()
                                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                                         .addGroup(layout.createSequentialGroup()
@@ -357,14 +351,20 @@ public class main extends javax.swing.JFrame {
                                                         .addGroup(layout.createSequentialGroup()
                                                                 .addGap(84, 84, 84)
                                                                 .addComponent(labelChanChan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                        .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGap(0, 0, Short.MAX_VALUE)))
+                                                        .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(dot, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(equal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                                .addGap(0, 6, Short.MAX_VALUE)))
                                 .addContainerGap())
                 );
                 layout.setVerticalGroup(
                         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addContainerGap(20, Short.MAX_VALUE)
                                 .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(2, 2, 2)
                                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -401,10 +401,9 @@ public class main extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(equal, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(dot, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(back, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addContainerGap(33, Short.MAX_VALUE))
+                                        .addComponent(equal, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(17, 17, 17))
                 );
 
                 pack();
@@ -452,12 +451,6 @@ public class main extends javax.swing.JFrame {
 	       
 	       operator = "/";
         }                                      
-
-        private void backActionPerformed(java.awt.event.ActionEvent evt) {                                     
-            String str = t1.getText();
-	    t1.setText(str.substring(0, str.length()-1));
-	    
-        }                                    
 
         private void plusActionPerformed(java.awt.event.ActionEvent evt) {                                     
                num1 = Double.parseDouble(t1.getText());
@@ -515,11 +508,19 @@ public class main extends javax.swing.JFrame {
         }                                          
 
         private void backSpaceActionPerformed(java.awt.event.ActionEvent evt) {                                          
-                // TODO add your handling code here:
+                String bs = null;
+		if(t1.getText().length() > 0){
+			StringBuilder sb = new StringBuilder(t1.getText());
+			sb.deleteCharAt(t1.getText().length() -1);
+			bs = sb.toString();
+			t1.setText(bs);
+		}
         }                                         
 
         private void posNegActionPerformed(java.awt.event.ActionEvent evt) {                                       
-                // TODO add your handling code here:
+                double nums = Double.parseDouble(String.valueOf(t1.getText()));
+		nums = nums * (-1);
+		t1.setText(String.valueOf(nums));
         }                                      
 
         private void clearActionPerformed(java.awt.event.ActionEvent evt) {                                      
@@ -573,18 +574,21 @@ public class main extends javax.swing.JFrame {
         private javax.swing.JButton b7;
         private javax.swing.JButton b8;
         private javax.swing.JButton b9;
-        private javax.swing.JButton back;
         private javax.swing.JButton backSpace;
         private javax.swing.JButton clear;
         private javax.swing.JButton divide;
         private javax.swing.JButton dot;
+        private javax.swing.JMenu editMenu;
         private javax.swing.JButton equal;
+        private javax.swing.JMenu fileMenu;
         private javax.swing.JButton jButton13;
+        private javax.swing.JMenuBar jMenuBar1;
         private javax.swing.JPanel jPanel1;
         private java.awt.Label label1;
         private java.awt.Label labelChanChan;
         private javax.swing.JButton minus;
         private javax.swing.JButton multiply1;
+        private javax.swing.JMenu optionMenu;
         private javax.swing.JButton plus;
         private javax.swing.JButton posNeg;
         private javax.swing.JTextField t1;
