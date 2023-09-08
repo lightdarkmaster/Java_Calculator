@@ -1,6 +1,7 @@
-package Java_Calculator;
-public class main extends javax.swing.JFrame {
 
+package Java_Calculator;
+
+public class main extends javax.swing.JFrame {
 	
 	double num1, num2;
 	String operator = null;
@@ -40,8 +41,13 @@ public class main extends javax.swing.JFrame {
                 clear = new javax.swing.JButton();
                 jMenuBar1 = new javax.swing.JMenuBar();
                 fileMenu = new javax.swing.JMenu();
+                saveMenu = new javax.swing.JMenuItem();
+                saveAsMenu = new javax.swing.JMenuItem();
                 editMenu = new javax.swing.JMenu();
+                jMenuItem2 = new javax.swing.JMenuItem();
                 optionMenu = new javax.swing.JMenu();
+                jMenuItem1 = new javax.swing.JMenuItem();
+                jMenuItem3 = new javax.swing.JMenuItem();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
                 setResizable(false);
@@ -51,6 +57,7 @@ public class main extends javax.swing.JFrame {
                 b2.setForeground(new java.awt.Color(255, 255, 255));
                 b2.setText("2");
                 b2.setBorder(null);
+                b2.setBorderPainted(false);
                 b2.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 b2ActionPerformed(evt);
@@ -62,6 +69,7 @@ public class main extends javax.swing.JFrame {
                 b3.setForeground(new java.awt.Color(255, 255, 255));
                 b3.setText("3");
                 b3.setBorder(null);
+                b3.setBorderPainted(false);
                 b3.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 b3ActionPerformed(evt);
@@ -73,6 +81,7 @@ public class main extends javax.swing.JFrame {
                 b1.setForeground(new java.awt.Color(255, 255, 255));
                 b1.setText("1");
                 b1.setBorder(null);
+                b1.setBorderPainted(false);
                 b1.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 b1ActionPerformed(evt);
@@ -84,6 +93,7 @@ public class main extends javax.swing.JFrame {
                 b5.setForeground(new java.awt.Color(255, 255, 255));
                 b5.setText("5");
                 b5.setBorder(null);
+                b5.setBorderPainted(false);
                 b5.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 b5ActionPerformed(evt);
@@ -95,6 +105,7 @@ public class main extends javax.swing.JFrame {
                 b6.setForeground(new java.awt.Color(255, 255, 255));
                 b6.setText("6");
                 b6.setBorder(null);
+                b6.setBorderPainted(false);
                 b6.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 b6ActionPerformed(evt);
@@ -106,6 +117,7 @@ public class main extends javax.swing.JFrame {
                 b4.setForeground(new java.awt.Color(255, 255, 255));
                 b4.setText("4");
                 b4.setBorder(null);
+                b4.setBorderPainted(false);
                 b4.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 b4ActionPerformed(evt);
@@ -117,6 +129,7 @@ public class main extends javax.swing.JFrame {
                 b8.setForeground(new java.awt.Color(255, 255, 255));
                 b8.setText("8");
                 b8.setBorder(null);
+                b8.setBorderPainted(false);
                 b8.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 b8ActionPerformed(evt);
@@ -128,6 +141,7 @@ public class main extends javax.swing.JFrame {
                 b9.setForeground(new java.awt.Color(255, 255, 255));
                 b9.setText("9");
                 b9.setBorder(null);
+                b9.setBorderPainted(false);
                 b9.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 b9ActionPerformed(evt);
@@ -139,6 +153,7 @@ public class main extends javax.swing.JFrame {
                 b7.setForeground(new java.awt.Color(255, 255, 255));
                 b7.setText("7");
                 b7.setBorder(null);
+                b7.setBorderPainted(false);
                 b7.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 b7ActionPerformed(evt);
@@ -150,6 +165,7 @@ public class main extends javax.swing.JFrame {
                 jButton13.setForeground(new java.awt.Color(255, 255, 255));
                 jButton13.setText("0");
                 jButton13.setBorder(null);
+                jButton13.setBorderPainted(false);
                 jButton13.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 jButton13ActionPerformed(evt);
@@ -161,6 +177,7 @@ public class main extends javax.swing.JFrame {
                 dot.setForeground(new java.awt.Color(255, 255, 255));
                 dot.setText(".");
                 dot.setBorder(null);
+                dot.setBorderPainted(false);
                 dot.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 dotActionPerformed(evt);
@@ -172,6 +189,7 @@ public class main extends javax.swing.JFrame {
                 equal.setForeground(new java.awt.Color(0, 0, 0));
                 equal.setText("=");
                 equal.setBorder(null);
+                equal.setBorderPainted(false);
                 equal.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 equalActionPerformed(evt);
@@ -183,6 +201,7 @@ public class main extends javax.swing.JFrame {
                 divide.setForeground(new java.awt.Color(0, 0, 0));
                 divide.setText("÷");
                 divide.setBorder(null);
+                divide.setBorderPainted(false);
                 divide.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 divideActionPerformed(evt);
@@ -194,6 +213,7 @@ public class main extends javax.swing.JFrame {
                 plus.setForeground(new java.awt.Color(0, 0, 0));
                 plus.setText("+");
                 plus.setBorder(null);
+                plus.setBorderPainted(false);
                 plus.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 plusActionPerformed(evt);
@@ -205,6 +225,7 @@ public class main extends javax.swing.JFrame {
                 minus.setForeground(new java.awt.Color(0, 0, 0));
                 minus.setText("-");
                 minus.setBorder(null);
+                minus.setBorderPainted(false);
                 minus.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 minusActionPerformed(evt);
@@ -243,6 +264,7 @@ public class main extends javax.swing.JFrame {
                 multiply1.setForeground(new java.awt.Color(0, 0, 0));
                 multiply1.setText("X");
                 multiply1.setBorder(null);
+                multiply1.setBorderPainted(false);
                 multiply1.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 multiply1ActionPerformed(evt);
@@ -265,6 +287,7 @@ public class main extends javax.swing.JFrame {
                 backSpace.setForeground(new java.awt.Color(0, 0, 0));
                 backSpace.setText("←");
                 backSpace.setBorder(null);
+                backSpace.setBorderPainted(false);
                 backSpace.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 backSpaceActionPerformed(evt);
@@ -276,6 +299,7 @@ public class main extends javax.swing.JFrame {
                 posNeg.setForeground(new java.awt.Color(0, 0, 0));
                 posNeg.setText("±");
                 posNeg.setBorder(null);
+                posNeg.setBorderPainted(false);
                 posNeg.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 posNegActionPerformed(evt);
@@ -287,6 +311,7 @@ public class main extends javax.swing.JFrame {
                 clear.setForeground(new java.awt.Color(0, 0, 0));
                 clear.setText("CE");
                 clear.setBorder(null);
+                clear.setBorderPainted(false);
                 clear.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 clearActionPerformed(evt);
@@ -294,12 +319,36 @@ public class main extends javax.swing.JFrame {
                 });
 
                 fileMenu.setText("File");
+
+                saveMenu.setText("Save");
+                fileMenu.add(saveMenu);
+
+                saveAsMenu.setText("Save as");
+                fileMenu.add(saveAsMenu);
+
                 jMenuBar1.add(fileMenu);
 
                 editMenu.setText("Edit");
+
+                jMenuItem2.setText("Edit Input");
+                jMenuItem2.setActionCommand("Edit input");
+                jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                jMenuItem2ActionPerformed(evt);
+                        }
+                });
+                editMenu.add(jMenuItem2);
+
                 jMenuBar1.add(editMenu);
 
                 optionMenu.setText("Options");
+
+                jMenuItem1.setText("Dark Mode");
+                optionMenu.add(jMenuItem1);
+
+                jMenuItem3.setText("Light Mode");
+                optionMenu.add(jMenuItem3);
+
                 jMenuBar1.add(optionMenu);
 
                 setJMenuBar(jMenuBar1);
@@ -527,6 +576,10 @@ public class main extends javax.swing.JFrame {
                  t1.setText("");
         }                                     
 
+        private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {                                           
+                // TODO add your handling code here:
+        }                                          
+
 	/**
 	 * @param args the command line arguments
 	 */
@@ -583,6 +636,9 @@ public class main extends javax.swing.JFrame {
         private javax.swing.JMenu fileMenu;
         private javax.swing.JButton jButton13;
         private javax.swing.JMenuBar jMenuBar1;
+        private javax.swing.JMenuItem jMenuItem1;
+        private javax.swing.JMenuItem jMenuItem2;
+        private javax.swing.JMenuItem jMenuItem3;
         private javax.swing.JPanel jPanel1;
         private java.awt.Label label1;
         private java.awt.Label labelChanChan;
@@ -591,6 +647,8 @@ public class main extends javax.swing.JFrame {
         private javax.swing.JMenu optionMenu;
         private javax.swing.JButton plus;
         private javax.swing.JButton posNeg;
+        private javax.swing.JMenuItem saveAsMenu;
+        private javax.swing.JMenuItem saveMenu;
         private javax.swing.JTextField t1;
         // End of variables declaration                   
 }
