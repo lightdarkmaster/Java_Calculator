@@ -5,7 +5,7 @@ My first Java calculator using java in netbeans
 ## 1. run app (main.java) or run the MyCalculator.exe file.
 ![Run the app](/img/2pic.png)
 ## 2. Calculate
-![Run the app](/img/Screenshot (1553).png)
+![Run the app](/img/desktop.png)
 # Features
 
 1. User Friendly UI.
