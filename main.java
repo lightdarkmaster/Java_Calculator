@@ -46,8 +46,8 @@ public class main extends javax.swing.JFrame {
                 editMenu = new javax.swing.JMenu();
                 jMenuItem2 = new javax.swing.JMenuItem();
                 optionMenu = new javax.swing.JMenu();
-                jMenuItem1 = new javax.swing.JMenuItem();
-                jMenuItem3 = new javax.swing.JMenuItem();
+                darklMode = new javax.swing.JMenuItem();
+                lightMode = new javax.swing.JMenuItem();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
                 setResizable(false);
@@ -172,9 +172,9 @@ public class main extends javax.swing.JFrame {
                         }
                 });
 
-                dot.setBackground(new java.awt.Color(255, 94, 12));
+                dot.setBackground(new java.awt.Color(255, 255, 255));
                 dot.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-                dot.setForeground(new java.awt.Color(255, 255, 255));
+                dot.setForeground(new java.awt.Color(0, 0, 0));
                 dot.setText(".");
                 dot.setBorder(null);
                 dot.setBorderPainted(false);
@@ -343,11 +343,16 @@ public class main extends javax.swing.JFrame {
 
                 optionMenu.setText("Options");
 
-                jMenuItem1.setText("Dark Mode");
-                optionMenu.add(jMenuItem1);
+                darklMode.setText("Dark Mode");
+                darklMode.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                darklModeActionPerformed(evt);
+                        }
+                });
+                optionMenu.add(darklMode);
 
-                jMenuItem3.setText("Light Mode");
-                optionMenu.add(jMenuItem3);
+                lightMode.setText("Light Mode");
+                optionMenu.add(lightMode);
 
                 jMenuBar1.add(optionMenu);
 
@@ -580,6 +585,10 @@ public class main extends javax.swing.JFrame {
                 // TODO add your handling code here:
         }                                          
 
+        private void darklModeActionPerformed(java.awt.event.ActionEvent evt) {                                          
+
+        }                                         
+
 	/**
 	 * @param args the command line arguments
 	 */
@@ -629,6 +638,7 @@ public class main extends javax.swing.JFrame {
         private javax.swing.JButton b9;
         private javax.swing.JButton backSpace;
         private javax.swing.JButton clear;
+        private javax.swing.JMenuItem darklMode;
         private javax.swing.JButton divide;
         private javax.swing.JButton dot;
         private javax.swing.JMenu editMenu;
@@ -636,12 +646,11 @@ public class main extends javax.swing.JFrame {
         private javax.swing.JMenu fileMenu;
         private javax.swing.JButton jButton13;
         private javax.swing.JMenuBar jMenuBar1;
-        private javax.swing.JMenuItem jMenuItem1;
         private javax.swing.JMenuItem jMenuItem2;
-        private javax.swing.JMenuItem jMenuItem3;
         private javax.swing.JPanel jPanel1;
         private java.awt.Label label1;
         private java.awt.Label labelChanChan;
+        private javax.swing.JMenuItem lightMode;
         private javax.swing.JButton minus;
         private javax.swing.JButton multiply1;
         private javax.swing.JMenu optionMenu;
